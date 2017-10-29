@@ -1,0 +1,14 @@
+{
+  "name": "selenium_wd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "runWD.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maksim Liubinski",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^3.6.0"
+  }
+}
