@@ -1,5 +1,5 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
-const Header = require('./pageObjects/header.js')
+const Header = require('./pageObjects/header.js');
 
 let driver = new Builder()
     .forBrowser('chrome')
@@ -20,6 +20,6 @@ driver.manage().window().maximize()
     .then(() => driver.findElement(header.documentation).click());
 
 driver.executeScript('window.open("https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/");')
-    .then(() => driver.switchTo().frame('Selenium Documentation — Selenium Documentation'));
+    .then(() => driver.switchTo().window('Selenium Documentation — Selenium Documentation'));
 
 //driver.quit();
